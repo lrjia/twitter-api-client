@@ -161,6 +161,9 @@ class Scraper:
     def list_memberships(self, user_ids: list[int], **kwargs) -> list[dict]:
         return self._run(Operation.ListMemberships, user_ids, **kwargs)
 
+    def list_members(self, ps: list[dict], **kwargs) -> list[dict]:
+        return self._run(Operation.ListMembers, ps, **kwargs)
+
     def favoriters(self, tweet_ids: list[int], **kwargs) -> list[dict]:
         """
         Get favoriters by tweet ids.

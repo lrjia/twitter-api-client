@@ -120,6 +120,7 @@ class Operation:
     Favoriters = {'tweetId': int}, 'XRRjv1-uj1HZn3o324etOQ', 'Favoriters'
     ConnectTabTimeline = {'context': dict}, 'lq02A-gEzbLefqTgD_PFzQ', 'ConnectTabTimeline'
     ListMemberships = {'userId': int}, 'BlEXXdARdSeL_0KyKHHvvg', 'ListMemberships'
+    ListMembers = {'listId': str, 'withSafetyModeUserFields': bool}, 'vA952kfgGw6hh8KatWnbqw', 'ListMembers'
 
 
     # Account Operations
@@ -261,7 +262,7 @@ class Operation:
     ListCreationRecommendedUsers = 'Zf8ZwG57EKtss-rPlryIqg', 'ListCreationRecommendedUsers'
     ListEditRecommendedUsers = '-F4wsOirYNXjjg-ZjccQpQ', 'ListEditRecommendedUsers'
     ListLatestTweetsTimeline = '2TemLyqrMpTeAmysdbnVqw', 'ListLatestTweetsTimeline'
-    ListMembers = 'vA952kfgGw6hh8KatWnbqw', 'ListMembers'
+    # ListMembers = 'vA952kfgGw6hh8KatWnbqw', 'ListMembers'
     # ListMemberships = 'BlEXXdARdSeL_0KyKHHvvg', 'ListMemberships'
     ListOwnerships = 'wQcOSjSQ8NtgxIwvYl1lMg', 'ListOwnerships'
     ListPins = 'J0JOhmi8HSsle8LfSWv0cw', 'ListPins'
@@ -368,6 +369,13 @@ class Operation:
         'withMessages': True,
     }
     default_features = {
+        # "rweb_tipjar_consumption_enabled": True,
+        # "communities_web_enable_tweet_community_results_fetch": True,
+        # "articles_preview_enabled": False,
+        # "creator_subscriptions_quote_tweet_preview_enabled": False,
+        # "tweet_with_visibility_results_prefer_gql_media_interstitial_enabled": True,
+        # "rweb_video_timestamps_enabled": True,
+
         # new
         'c9s_tweet_anatomy_moderator_badge_enabled': True,
         'responsive_web_home_pinned_timelines_enabled': True,
