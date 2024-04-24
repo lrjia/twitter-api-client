@@ -119,7 +119,7 @@ class Operation:
     Retweeters = {'tweetId': int}, '0BoJlKAxoNPQUHRftlwZ2w', 'Retweeters'
     Favoriters = {'tweetId': int}, 'XRRjv1-uj1HZn3o324etOQ', 'Favoriters'
     ConnectTabTimeline = {'context': dict}, 'lq02A-gEzbLefqTgD_PFzQ', 'ConnectTabTimeline'
-    ListMemberships = {'userId': int}, 'BlEXXdARdSeL_0KyKHHvvg', 'ListMemberships'
+    ListMemberships = {'userId': str}, 'BlEXXdARdSeL_0KyKHHvvg', 'ListMemberships'
     ListMembers = {'listId': str, 'withSafetyModeUserFields': bool}, 'vA952kfgGw6hh8KatWnbqw', 'ListMembers'
 
 

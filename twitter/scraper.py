@@ -158,7 +158,7 @@ class Scraper:
         """
         return self._run(Operation.Following, user_ids, **kwargs)
 
-    def list_memberships(self, user_ids: list[int], **kwargs) -> list[dict]:
+    def list_memberships(self, user_ids: list[str], **kwargs) -> list[dict]:
         return self._run(Operation.ListMemberships, user_ids, **kwargs)
 
     def list_members(self, ps: list[dict], **kwargs) -> list[dict]:
